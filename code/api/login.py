@@ -10,26 +10,33 @@
 
 # 导包
 import requests
-import config
+from common.base_api import BaseApi
+from config import Config
 
 
 # 创建接口类
-class LoginAPI:
+class LoginAPI(BaseApi):
     # 初始化
     def __init__(self):
+        super().__init__()
         # 指定url基本信息
-        # self.url_login = "http://kdtx-test.itheima.net/api/login"
-        self.url_login = config.BASE_URL + "/oauth/token"
-        self.headers = {
-            "Content-Type": "application/json"
-        }
+        self.url_login = "/oauth/token"
 
     # 登录
     def login(self, test_data):
+        """
+        登录接口
+        :param test_data: 登录参数
+        :return: 响应对象
+        """
+        # 构建请求参数
         params = []
         for key, value in test_data.items():
             params.append(f"{key}={value}")
-        real_url = f"{self.url_login}?{'&'.join(params)}"
-
-        return requests.get(url=real_url, headers=self.headers)
+        
+        # 拼接URL和参数
+        url = f"{self.url_login}?{'&'.join(params)}"
+        
+        # 发送GET请求
+        return self.get(url)
 

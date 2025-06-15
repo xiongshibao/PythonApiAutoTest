@@ -1,22 +1,33 @@
 # 导包
-import logging
+import hashlib
 
 import allure
+import bcrypt
 import pytest
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from api.login import LoginAPI
-
-# 设置日志
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+from common.logger import logger
 
 # 创建测试类
 class TestLoginAPI:
     # 初始化
     uuid = None
+    CLIENT_SALT = "$2a$10$o5L.dWYEjZjaejOmN3x4Qu"
+
+    def default_encode(self, source):
+        """
+        默认编码
+        采用MD5加密，HEX编码，加盐，Bcrypt加密，返回
+        """
+        # MD5加密并转为HEX
+        md5_hash = hashlib.md5(source.encode('utf-8')).hexdigest()
+        # Bcrypt加密
+        hashed = bcrypt.hashpw(md5_hash.encode('utf-8'), self.CLIENT_SALT.encode('utf-8'))
+        # 截取掉盐值长度
+        return hashed.decode('utf-8')[len(self.CLIENT_SALT):]
 
     # 前置处理
     @pytest.fixture(autouse=True)
@@ -38,20 +49,24 @@ class TestLoginAPI:
     def teardown(self):
         pass
 
-
     @allure.feature("登录功能")
     @allure.story("用户登录")
     @allure.description("登录成功")
     # 登录成功
     def test01_success(self):
         try:
+            password = "xiongshibao"
+            # 使用默认编码方式加密密码
+            hashed_password = self.default_encode(password)
+
             login_data = {
                 "username": "xiongshibao",
-                "password": "xiongshibao",
-                "grant_type":"password",
-                "client_id":"bookstore_frontend",
-                "client_secret":"bookstore_secret"
+                "password": hashed_password,
+                "grant_type": "password",
+                "client_id": "bookstore_frontend",
+                "client_secret": "bookstore_secret"
             }
+
             response = self.login_api.login(test_data=login_data)
             # 断言响应状态码为200
             assert 200 == response.status_code
@@ -70,12 +85,17 @@ class TestLoginAPI:
     # 登录失败（用户名为空）
     def test02_without_username(self):
         try:
+            password = ""
+            # 使用默认编码方式加密密码
+            hashed_password = self.default_encode(password)
+            logger.info(f"加密结果: {hashed_password}")
+
             login_data = {
                 "username": "xiongshibao",
-                "password": "",
-                "grant_type":"password",
-                "client_id":"bookstore_frontend",
-                "client_secret":"bookstore_secret"
+                "password": password,
+                "grant_type": "password",
+                "client_id": "bookstore_frontend",
+                "client_secret": "bookstore_secret"
             }
             response = self.login_api.login(test_data=login_data)
             logger.info(f"响应内容: {response.text}")
@@ -84,8 +104,6 @@ class TestLoginAPI:
             assert 400 == response.status_code
             # 断言响应数据包含'错误'
             assert 'error' in response.text
-            # 断言响应json数据中code值
-            # assert 500 == response.json().get("code")
         except requests.exceptions.ConnectionError as e:
             pytest.fail(f"连接服务器失败: {str(e)}")
         except requests.exceptions.RequestException as e:
@@ -99,12 +117,17 @@ class TestLoginAPI:
     # 登录失败（未注册用户）
     def test03_username_not_exist(self):
         try:
+            password = "123456"
+            # 使用默认编码方式加密密码
+            hashed_password = self.default_encode(password)
+            logger.info(f"加密结果: {hashed_password}")
+
             login_data = {
                 "username": "jack666",
-                "password": "123456",
-                "grant_type":"password",
-                "client_id":"bookstore_frontend",
-                "client_secret":"bookstore_secret"
+                "password": password,
+                "grant_type": "password",
+                "client_id": "bookstore_frontend",
+                "client_secret": "bookstore_secret"
             }
             response = self.login_api.login(test_data=login_data)
             logger.info(f"响应内容: {response.text}")
@@ -113,8 +136,6 @@ class TestLoginAPI:
             assert 400 == response.status_code
             # 断言响应数据包含'错误'
             assert 'error' in response.text
-            # 断言响应json数据中code值
-            # assert 500 == response.json().get("code")
         except requests.exceptions.ConnectionError as e:
             pytest.fail(f"连接服务器失败: {str(e)}")
         except requests.exceptions.RequestException as e:

@@ -1,0 +1,108 @@
+2025-06-15 14:13:29,484 - test - INFO - GET请求地址: http://localhost:8080/oauth/token
+2025-06-15 14:13:29,485 - test - INFO - GET请求参数: {'username': 'xiongshibao', 'password': 'xiongshibao', 'grant_type': 'password', 'client_id': 'bookstore_frontend', 'client_secret': 'bookstore_secret'}
+2025-06-15 14:14:34,250 - test - INFO - GET请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:14:34,251 - test - INFO - GET请求参数: None
+2025-06-15 14:15:18,479 - test - INFO - GET请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:15:18,480 - test - INFO - GET请求参数: None
+2025-06-15 14:15:18,740 - test - INFO - GET请求相应: <Response [400]>
+2025-06-15 14:16:20,897 - test - INFO - ==================================================
+2025-06-15 14:16:20,897 - test - INFO - 发送GET请求
+2025-06-15 14:16:20,898 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:16:20,898 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:16:21,150 - test - INFO - ==================================================
+2025-06-15 14:16:21,150 - test - INFO - 收到响应
+2025-06-15 14:16:21,151 - test - INFO - 响应状态码: 400
+2025-06-15 14:16:21,151 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:16:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:16:21,151 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:16:21,152 - test - INFO - ==================================================
+2025-06-15 14:17:21,836 - test - INFO - 加密结果: EfOHhgVgeFR6pWt2tM80Pkiwjs1aEeC
+2025-06-15 14:17:21,837 - test - INFO - ==================================================
+2025-06-15 14:17:21,837 - test - INFO - 发送GET请求
+2025-06-15 14:17:21,837 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:17:21,838 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:17:22,090 - test - INFO - ==================================================
+2025-06-15 14:17:22,091 - test - INFO - 收到响应
+2025-06-15 14:17:22,091 - test - INFO - 响应状态码: 400
+2025-06-15 14:17:22,091 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:17:22 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:17:22,092 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:17:22,092 - test - INFO - ==================================================
+2025-06-15 14:18:19,258 - test - INFO - 加密结果: B/02imLFAON8yzybYlLiYDC.xt0E/aG
+2025-06-15 14:18:19,259 - test - INFO - ==================================================
+2025-06-15 14:18:19,259 - test - INFO - 发送GET请求
+2025-06-15 14:18:19,260 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:18:19,260 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:18:19,524 - test - INFO - ==================================================
+2025-06-15 14:18:19,525 - test - INFO - 收到响应
+2025-06-15 14:18:19,525 - test - INFO - 响应状态码: 400
+2025-06-15 14:18:19,525 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:18:19 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:18:19,526 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:18:19,526 - test - INFO - ==================================================
+2025-06-15 14:18:45,380 - test - INFO - 加密结果: m37G7JuxjQNMMnws1xs5cMulMFCdmxu
+2025-06-15 14:18:45,381 - test - INFO - ==================================================
+2025-06-15 14:18:45,381 - test - INFO - 发送GET请求
+2025-06-15 14:18:45,381 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:18:45,381 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:18:45,637 - test - INFO - ==================================================
+2025-06-15 14:18:45,637 - test - INFO - 收到响应
+2025-06-15 14:18:45,637 - test - INFO - 响应状态码: 400
+2025-06-15 14:18:45,638 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:18:45 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:18:45,638 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:18:45,638 - test - INFO - ==================================================
+2025-06-15 14:19:09,452 - test - INFO - 加密结果: N4DlnJR2dyWoSmR1fbilMGa0boXVi82
+2025-06-15 14:19:09,453 - test - INFO - ==================================================
+2025-06-15 14:19:09,453 - test - INFO - 发送GET请求
+2025-06-15 14:19:09,453 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=N4DlnJR2dyWoSmR1fbilMGa0boXVi82&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:19:09,453 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:19:09,703 - test - INFO - ==================================================
+2025-06-15 14:19:09,703 - test - INFO - 收到响应
+2025-06-15 14:19:09,703 - test - INFO - 响应状态码: 400
+2025-06-15 14:19:09,703 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:19:09 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:19:09,703 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:19:09,704 - test - INFO - ==================================================
+2025-06-15 14:22:13,709 - test - INFO - 加密结果: 0r6gAhYCiO7CUhLwTTd8fcN91yIoPY6
+2025-06-15 14:22:13,710 - test - INFO - ==================================================
+2025-06-15 14:22:13,710 - test - INFO - 发送GET请求
+2025-06-15 14:22:13,710 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=xiongshibao&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:22:13,710 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:22:13,972 - test - INFO - ==================================================
+2025-06-15 14:22:13,973 - test - INFO - 收到响应
+2025-06-15 14:22:13,973 - test - INFO - 响应状态码: 400
+2025-06-15 14:22:13,973 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:22:13 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:22:13,973 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:22:13,974 - test - INFO - ==================================================
+2025-06-15 14:22:14,203 - test - INFO - 加密结果: rjItcmcDp4xPerFALfeEjXQ4fDlynyC
+2025-06-15 14:22:14,204 - test - INFO - ==================================================
+2025-06-15 14:22:14,204 - test - INFO - 发送GET请求
+2025-06-15 14:22:14,204 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:22:14,204 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:22:14,440 - test - INFO - ==================================================
+2025-06-15 14:22:14,440 - test - INFO - 收到响应
+2025-06-15 14:22:14,440 - test - INFO - 响应状态码: 400
+2025-06-15 14:22:14,440 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:22:13 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:22:14,441 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:22:14,441 - test - INFO - ==================================================
+2025-06-15 14:22:14,441 - test - INFO - 响应内容: {"error":"invalid_grant","error_description":"Bad credentials"}
+2025-06-15 14:22:14,441 - test - INFO - 响应状态码: 400
+2025-06-15 14:22:14,506 - test - INFO - 加密结果: MFfTW3uNI4eqhwDkG7HP9p2mzEUu/r2
+2025-06-15 14:22:14,507 - test - INFO - ==================================================
+2025-06-15 14:22:14,507 - test - INFO - 发送GET请求
+2025-06-15 14:22:14,507 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=jack666&password=123456&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:22:14,507 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:22:14,659 - test - INFO - ==================================================
+2025-06-15 14:22:14,659 - test - INFO - 收到响应
+2025-06-15 14:22:14,660 - test - INFO - 响应状态码: 400
+2025-06-15 14:22:14,660 - test - INFO - 响应头: {'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:22:13 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'close'}
+2025-06-15 14:22:14,660 - test - INFO - 响应内容: {"error":"user_not_found","error_description":"未找到该用户:jack666"}
+2025-06-15 14:22:14,660 - test - INFO - ==================================================
+2025-06-15 14:22:14,660 - test - INFO - 响应内容: {"error":"user_not_found","error_description":"未找到该用户:jack666"}
+2025-06-15 14:22:14,660 - test - INFO - 响应状态码: 400
+2025-06-15 14:22:33,681 - test - INFO - ==================================================
+2025-06-15 14:22:33,681 - test - INFO - 发送GET请求
+2025-06-15 14:22:33,681 - test - INFO - 请求地址: http://localhost:8080/oauth/token?username=xiongshibao&password=0r6gAhYCiO7CUhLwTTd8fcN91yIoPY6&grant_type=password&client_id=bookstore_frontend&client_secret=bookstore_secret
+2025-06-15 14:22:33,682 - test - INFO - 请求头: {'Content-Type': 'application/json'}
+2025-06-15 14:22:33,897 - test - INFO - ==================================================
+2025-06-15 14:22:33,897 - test - INFO - 收到响应
+2025-06-15 14:22:33,897 - test - INFO - 响应状态码: 200
+2025-06-15 14:22:33,898 - test - INFO - 响应头: {'Cache-Control': 'no-store', 'Pragma': 'no-cache', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'X-Frame-Options': 'DENY', 'Date': 'Sun, 15 Jun 2025 06:22:33 GMT', 'Keep-Alive': 'timeout=60', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2025-06-15 14:22:33,898 - test - INFO - 响应内容: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJvb2tzdG9yZS1qd3Qta2lkIn0.eyJzdWIiOiJib29rc3RvcmUiLCJ1c2VyX25hbWUiOiJ4aW9uZ3NoaWJhbyIsInNjb3BlIjpbIkJST1dTRVIiXSwiaXNzIjoiaWN5ZmVuaXhAZ21haWwuY29tIiwiZXhwIjozMzI2NzY4NTUzLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiNDlkMzdjNDItY2MxMC00ZTMwLThlMGYtYmIwNDEyMDJjYmQ4IiwiY2xpZW50X2lkIjoiYm9va3N0b3JlX2Zyb250ZW5kIiwidXNlcm5hbWUiOiJ4aW9uZ3NoaWJhbyJ9.apAmLkU8le0CMKoNLoctkRGk98d4-hB8hiJGkgQQDNlswKtQUCTw4MMF6AFdTISnsUE8-l78phghhFUEanUoPW5vWzWDH7EzE-BsESU-fpgv2AhgEReIwuIQdStdICtUQnIDc1ygdqL0l7rmuB4lWScFOZNO3MgLQkeTXLYlTnIA_E6eLu7BR1r6Lonab5F-ur_aiqZ-iK8Y9e5dzZrJfMadyrfjnX7z88ddljsvjFdfra0fc2-rlD6HHUCGv5Ap5VgBrnFjoPqixkxOSUUSgMjlAuqylQ461ZtVrtoAQ1bARGkHYNTiOCha_p4T34KzF5bxxoAoUhnQOURAle6ceg","token_type":"bearer","refresh_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJvb2tzdG9yZS1qd3Qta2lkIn0.eyJzdWIiOiJib29rc3RvcmUiLCJ1c2VyX25hbWUiOiJ4aW9uZ3NoaWJhbyIsInNjb3BlIjpbIkJST1dTRVIiXSwiYXRpIjoiNDlkMzdjNDItY2MxMC00ZTMwLThlMGYtYmIwNDEyMDJjYmQ4IiwiaXNzIjoiaWN5ZmVuaXhAZ21haWwuY29tIiwiZXhwIjoxNzUxMjY0NTUzLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiY2YyNzc0N2ItYjQ2ZS00ZjQyLTk3MTEtYjkxZDUzYTRjNTIzIiwiY2xpZW50X2lkIjoiYm9va3N0b3JlX2Zyb250ZW5kIiwidXNlcm5hbWUiOiJ4aW9uZ3NoaWJhbyJ9.Z7wxtG9DySFzZVPS1dyW_rf2WlRMPAV4llDVhBs3a37jaiARw6FhGGXakhKPL_w6yMdxaH-7m_aNsuT1c487oh4pGKQ5LH2a_4ZdxghegqltQKUxgAhgMuU_UXz6qGi4_mmC1IqrEoCptwzUjmVgAVP1WdvmWmh5BqIE5QPuJGu2-SZHsfqhgOnfB_L7p-ECi66Nque--IW85eOyPz3rd7qBbo2KnJcc9st0OAgL2k2ZhQ_aIu2yxmjSjUL9xooowaZbm3_ctuZWRE2OLE6R4NXZZ-t8Lm7mM6ZhScpM1LhHgFVze3UIx53q_oollsqUS58205QYUl80k5Sfo5bknA","expires_in":1576799999,"scope":"BROWSER","sub":"bookstore","iss":"icyfenix@gmail.com","authorities":["ROLE_USER"],"username":"xiongshibao","jti":"49d37c42-cc10-4e30-8e0f-bb041202cbd8"}
+2025-06-15 14:22:33,898 - test - INFO - ==================================================
